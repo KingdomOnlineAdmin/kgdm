@@ -15,6 +15,7 @@ namespace kgdm
 
     public class Entrypoint
     {
+        //PInvoke stuff
         [DllImport("kernel32.dll")]
         static extern int AllocConsole();
 
