@@ -1,6 +1,6 @@
 # kgdm
 Main repository for kgdm, a hack for the game Kingdom.
-To use, copy the .dll file into /Kingdom_Data/Managed/ in your kingdom installation location 
+To use, copy the .dll file in Assembly-csharp to /Kingdom_Data/Managed/ in your kingdom installation location 
 and replace the existing file. [Make a backup first!]
 
 Open kgdm.sln in Visual Studio and compile. Move kgdm.dll into /Kingdom_Data/Managed/ in your kingdom installation location 
