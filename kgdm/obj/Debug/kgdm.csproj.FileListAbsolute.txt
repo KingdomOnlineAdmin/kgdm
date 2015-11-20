@@ -1,0 +1,9 @@
+c:\users\ben\documents\visual studio 2015\Projects\kgdm\kgdm\bin\Debug\kgdm.pdb
+c:\users\ben\documents\visual studio 2015\Projects\kgdm\kgdm\obj\Debug\kgdm.csprojResolveAssemblyReference.cache
+c:\users\ben\documents\visual studio 2015\Projects\kgdm\kgdm\obj\Debug\kgdm.pdb
+c:\users\ben\documents\visual studio 2015\Projects\kgdm\kgdm\bin\Debug\kgdm.dll
+c:\users\ben\documents\visual studio 2015\Projects\kgdm\kgdm\obj\Debug\kgdm.dll
+C:\KingdomHack\KingdomInstallation\Kingdom_Data\Managed\kgdm.dll
+C:\KingdomHack\KingdomInstallation\Kingdom_Data\Managed\kgdm.pdb
+C:\KingdomHack\KingdomInstallation\kgdm\kgdm.dll
+C:\KingdomHack\KingdomInstallation\kgdm\kgdm.pdb

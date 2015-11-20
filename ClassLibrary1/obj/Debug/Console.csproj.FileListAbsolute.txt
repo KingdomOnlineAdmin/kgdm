@@ -1,0 +1,4 @@
+C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\ClassLibrary1\bin\Debug\ClassLibrary1.exe
+C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\ClassLibrary1\obj\Debug\ClassLibrary1.exe
+C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
