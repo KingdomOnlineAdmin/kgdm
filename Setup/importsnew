@@ -1,0 +1,80 @@
+.assembly extern mscorlib
+{
+  .publickeytoken = (7C EC 85 D7 BE A7 79 8E )                         // |.....y.
+  .ver 2:0:5:0
+}
+.assembly extern UnityEngine
+{
+  .ver 0:0:0:0
+}
+.assembly extern System
+{
+  .publickeytoken = (7C EC 85 D7 BE A7 79 8E )                         // |.....y.
+  .ver 2:0:5:0
+}
+.assembly extern System.Xml
+{
+  .publickeytoken = (7C EC 85 D7 BE A7 79 8E )                         // |.....y.
+  .ver 2:0:5:0
+}
+.assembly extern UnityEngine.UI
+{
+  .ver 1:0:0:0
+}
+.assembly extern System.Core
+{
+  .publickeytoken = (7C EC 85 D7 BE A7 79 8E )                         // |.....y.
+  .ver 2:0:5:0
+}
+.assembly extern DOTween
+{
+  .ver 1:0:0:0
+}
+.assembly extern Rewired_Core
+{
+  .ver 1:0:0:0
+}
+.assembly extern DOTween43
+{
+  .ver 1:0:0:0
+}
+.assembly extern 'Assembly-CSharp-firstpass'
+{
+  .ver 0:0:0:0
+}
+.assembly extern DOTween46
+{
+  .ver 1:0:0:0
+}
+.assembly extern 'Assembly-CSharp'
+{
+  .ver 0:0:0:0
+}
+.assembly extern System.Windows.Forms
+{
+  .ver 0:0:0:0
+}
+.assembly extern System as System_13
+{
+  .ver 0:0:0:0
+}
+.assembly extern System.IO
+{
+  .ver 0:0:0:0
+}
+.assembly extern kgdm
+{
+  .ver 0:0:0:0
+}
+.assembly extern kgdm as kgdm_16
+{
+  .ver 1:0:0:0
+}
+.assembly 'Assembly-CSharp'
+{
+  .custom instance void [System.Core]System.Runtime.CompilerServices.ExtensionAttribute::.ctor() = ( 01 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+                                                                                                             63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       // ceptionThrows.
+  .hash algorithm 0x00008004
+  .ver 0:0:0:0
+}

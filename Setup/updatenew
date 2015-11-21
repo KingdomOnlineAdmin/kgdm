@@ -1,0 +1,211 @@
+.method private hidebysig instance void 
+          Update() cil managed
+  {
+    // Code size       544 (0x220)
+    .maxstack  4
+    .locals init (string[] V_0,
+             string[] V_1,
+             int32 V_2,
+             string V_3)
+    IL_0000:  call       void [kgdm_16]kgdm.Entrypoint::Update()
+    IL_0005:  ldsfld     class ['Assembly-CSharp']Game ['Assembly-CSharp']Controllers::game
+    IL_000a:  ldfld      valuetype ['Assembly-CSharp']Game/GameState ['Assembly-CSharp']Game::gameState
+    IL_000f:  box        ['Assembly-CSharp']Game/GameState
+    IL_0014:  callvirt   instance string [mscorlib]System.Object::ToString()
+    IL_0019:  call       void [kgdm_16]kgdm.Entrypoint::SendValue(object)
+    IL_001e:  ldc.i4     0x11a
+    IL_0023:  call       bool [UnityEngine]UnityEngine.Input::GetKeyDown(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_0028:  brfalse.s  IL_0034
+
+    IL_002a:  ldsfld     class ['Assembly-CSharp']Kingdom ['Assembly-CSharp']Controllers::kingdom
+    IL_002f:  callvirt   instance void ['Assembly-CSharp']Kingdom::SpawnStartingCoins()
+    IL_0034:  ldc.i4     0x119
+    IL_0039:  call       bool [UnityEngine]UnityEngine.Input::GetKey(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_003e:  brfalse.s  IL_005f
+
+    IL_0040:  ldarg.0
+    IL_0041:  ldfld      class CameraDolly Game::_mainCamera
+    IL_0046:  ldc.r4     0.2
+    IL_004b:  ldc.r4     0.0
+    IL_0050:  newobj     instance void [UnityEngine]UnityEngine.Vector2::.ctor(float32,
+                                                                               float32)
+    IL_0055:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector2::op_Implicit(valuetype [UnityEngine]UnityEngine.Vector2)
+    IL_005a:  callvirt   instance void ['Assembly-CSharp']CameraDolly::MoveBy(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_005f:  ldc.i4.s   127
+    IL_0061:  call       bool [UnityEngine]UnityEngine.Input::GetKey(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_0066:  brfalse.s  IL_0087
+
+    IL_0068:  ldarg.0
+    IL_0069:  ldfld      class CameraDolly Game::_mainCamera
+    IL_006e:  ldc.r4     -0.2
+    IL_0073:  ldc.r4     0.0
+    IL_0078:  newobj     instance void [UnityEngine]UnityEngine.Vector2::.ctor(float32,
+                                                                               float32)
+    IL_007d:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector2::op_Implicit(valuetype [UnityEngine]UnityEngine.Vector2)
+    IL_0082:  callvirt   instance void ['Assembly-CSharp']CameraDolly::MoveBy(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_0087:  ldc.i4     0x117
+    IL_008c:  call       bool [UnityEngine]UnityEngine.Input::GetKeyDown(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_0091:  brfalse.s  IL_009e
+
+    IL_0093:  ldsfld     class ['Assembly-CSharp']EnemyController ['Assembly-CSharp']Controllers::enemyController
+    IL_0098:  ldc.i4.1
+    IL_0099:  callvirt   instance void ['Assembly-CSharp']EnemyController::Retreat(bool)
+    IL_009e:  ldc.i4.s   119
+    IL_00a0:  call       bool [UnityEngine]UnityEngine.Input::GetKey(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_00a5:  brfalse.s  IL_00c6
+
+    IL_00a7:  ldarg.0
+    IL_00a8:  ldfld      class CameraDolly Game::_mainCamera
+    IL_00ad:  ldc.r4     0.0
+    IL_00b2:  ldc.r4     0.2
+    IL_00b7:  newobj     instance void [UnityEngine]UnityEngine.Vector2::.ctor(float32,
+                                                                               float32)
+    IL_00bc:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector2::op_Implicit(valuetype [UnityEngine]UnityEngine.Vector2)
+    IL_00c1:  callvirt   instance void ['Assembly-CSharp']CameraDolly::MoveBy(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_00c6:  ldc.i4.s   115
+    IL_00c8:  call       bool [UnityEngine]UnityEngine.Input::GetKey(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_00cd:  brfalse.s  IL_00ee
+
+    IL_00cf:  ldarg.0
+    IL_00d0:  ldfld      class CameraDolly Game::_mainCamera
+    IL_00d5:  ldc.r4     0.0
+    IL_00da:  ldc.r4     -0.2
+    IL_00df:  newobj     instance void [UnityEngine]UnityEngine.Vector2::.ctor(float32,
+                                                                               float32)
+    IL_00e4:  call       valuetype [UnityEngine]UnityEngine.Vector3 [UnityEngine]UnityEngine.Vector2::op_Implicit(valuetype [UnityEngine]UnityEngine.Vector2)
+    IL_00e9:  callvirt   instance void ['Assembly-CSharp']CameraDolly::MoveBy(valuetype [UnityEngine]UnityEngine.Vector3)
+    IL_00ee:  ldc.i4     0x11b
+    IL_00f3:  call       bool [UnityEngine]UnityEngine.Input::GetKeyDown(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_00f8:  brfalse.s  IL_0108
+
+    IL_00fa:  ldarg.0
+    IL_00fb:  ldfld      class CameraDolly Game::_mainCamera
+    IL_0100:  ldnull
+    IL_0101:  ldc.i4.0
+    IL_0102:  ldc.i4.0
+    IL_0103:  callvirt   instance void ['Assembly-CSharp']CameraDolly::SetTarget(class [UnityEngine]UnityEngine.GameObject,
+                                                                                 bool,
+                                                                                 bool)
+    IL_0108:  ldc.i4     0x11c
+    IL_010d:  call       bool [UnityEngine]UnityEngine.Input::GetKeyDown(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_0112:  brfalse.s  IL_0130
+
+    IL_0114:  ldarg.0
+    IL_0115:  ldfld      class CameraDolly Game::_mainCamera
+    IL_011a:  ldsfld     class ['Assembly-CSharp']Kingdom ['Assembly-CSharp']Controllers::kingdom
+    IL_011f:  ldfld      class ['Assembly-CSharp']Player ['Assembly-CSharp']Kingdom::player
+    IL_0124:  callvirt   instance class [UnityEngine]UnityEngine.GameObject [UnityEngine]UnityEngine.Component::get_gameObject()
+    IL_0129:  ldc.i4.1
+    IL_012a:  ldc.i4.1
+    IL_012b:  callvirt   instance void ['Assembly-CSharp']CameraDolly::SetTarget(class [UnityEngine]UnityEngine.GameObject,
+                                                                                 bool,
+                                                                                 bool)
+    IL_0130:  ldc.i4     0x11d
+    IL_0135:  call       bool [UnityEngine]UnityEngine.Input::GetKeyDown(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_013a:  brfalse.s  IL_0192
+
+    IL_013c:  ldstr      "ConsoleOutput.log"
+    IL_0141:  ldstr      ">>Reading Script"
+    IL_0146:  call       void [mscorlib]System.IO.File::AppendAllText(string,
+                                                                      string)
+    IL_014b:  ldstr      "scripts/one.txt"
+    IL_0150:  call       string[] [mscorlib]System.IO.File::ReadAllLines(string)
+    IL_0155:  stloc.0
+    IL_0156:  ldloc.0
+    IL_0157:  stloc.1
+    IL_0158:  ldc.i4.0
+    IL_0159:  stloc.2
+    IL_015a:  br.s       IL_018c
+
+    IL_015c:  ldloc.1
+    IL_015d:  ldloc.2
+    IL_015e:  ldelem.ref
+    IL_015f:  stloc.3
+    IL_0160:  ldstr      "ConsoleOutput.log"
+    IL_0165:  ldstr      "running: "
+    IL_016a:  ldloc.3
+    IL_016b:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0170:  call       void [mscorlib]System.IO.File::AppendAllText(string,
+                                                                      string)
+    IL_0175:  ldloc.3
+    IL_0176:  ldstr      "showmenu"
+    IL_017b:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_0180:  brfalse.s  IL_0188
+
+    IL_0182:  ldarg.0
+    IL_0183:  call       instance void Game::ShowMenu()
+    IL_0188:  ldloc.2
+    IL_0189:  ldc.i4.1
+    IL_018a:  add
+    IL_018b:  stloc.2
+    IL_018c:  ldloc.2
+    IL_018d:  ldloc.1
+    IL_018e:  ldlen
+    IL_018f:  conv.i4
+    IL_0190:  blt.s      IL_015c
+
+    IL_0192:  ldc.i4.s   9
+    IL_0194:  call       bool [UnityEngine]UnityEngine.Input::GetKeyDown(valuetype [UnityEngine]UnityEngine.KeyCode)
+    IL_0199:  brfalse.s  IL_01a0
+
+    IL_019b:  call       void [kgdm_16]kgdm.Entrypoint::Show()
+    IL_01a0:  ldarg.0
+    IL_01a1:  ldfld      bool Game::_won
+    IL_01a6:  brtrue     IL_021f
+
+    IL_01ab:  ldarg.0
+    IL_01ac:  ldfld      class [Rewired_Core]Rewired.Player Game::_rewired
+    IL_01b1:  ldstr      "Start"
+    IL_01b6:  callvirt   instance bool [Rewired_Core]Rewired.Player::GetButtonDown(string)
+    IL_01bb:  brfalse.s  IL_01fe
+
+    IL_01bd:  ldarg.0
+    IL_01be:  ldfld      valuetype Game/GameState Game::gameState
+    IL_01c3:  ldc.i4.2
+    IL_01c4:  beq.s      IL_01cf
+
+    IL_01c6:  ldarg.0
+    IL_01c7:  ldfld      valuetype Game/GameState Game::gameState
+    IL_01cc:  ldc.i4.1
+    IL_01cd:  bne.un.s   IL_01df
+
+    IL_01cf:  ldarg.0
+    IL_01d0:  ldfld      bool Game::_inCredits
+    IL_01d5:  brtrue.s   IL_01df
+
+    IL_01d7:  ldarg.0
+    IL_01d8:  call       instance void Game::ShowMenu()
+    IL_01dd:  br.s       IL_01fe
+
+    IL_01df:  ldarg.0
+    IL_01e0:  ldfld      valuetype Game/GameState Game::gameState
+    IL_01e5:  ldc.i4.3
+    IL_01e6:  bne.un.s   IL_01fe
+
+    IL_01e8:  ldarg.0
+    IL_01e9:  ldfld      bool Game::_inCredits
+    IL_01ee:  brtrue.s   IL_01f8
+
+    IL_01f0:  ldarg.0
+    IL_01f1:  call       instance void Game::HideMenu()
+    IL_01f6:  br.s       IL_01fe
+
+    IL_01f8:  ldarg.0
+    IL_01f9:  call       instance void Game::HideCredits()
+    IL_01fe:  ldarg.0
+    IL_01ff:  ldfld      class [Rewired_Core]Rewired.Player Game::_rewired
+    IL_0204:  ldstr      "Pay"
+    IL_0209:  callvirt   instance bool [Rewired_Core]Rewired.Player::GetButtonDown(string)
+    IL_020e:  brfalse.s  IL_021f
+
+    IL_0210:  ldarg.0
+    IL_0211:  ldfld      valuetype Game/GameState Game::gameState
+    IL_0216:  ldc.i4.4
+    IL_0217:  bne.un.s   IL_021f
+
+    IL_0219:  ldarg.0
+    IL_021a:  call       instance void Game::Restart()
+    IL_021f:  ret
+  } // end of method Game::Update

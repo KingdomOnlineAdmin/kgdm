@@ -1,0 +1,63 @@
+.method private hidebysig instance void 
+          Update() cil managed
+  {
+    // Code size       158 (0x9e)
+    .maxstack  12
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      bool Game::_won
+    IL_0006:  brtrue     IL_009d
+
+    IL_000b:  ldarg.0
+    IL_000c:  ldfld      class [Rewired_Core]Rewired.Player Game::_rewired
+    IL_0011:  ldstr      "Start"
+    IL_0016:  callvirt   instance bool [Rewired_Core]Rewired.Player::GetButtonDown(string)
+    IL_001b:  brfalse    IL_0076
+
+    IL_0020:  ldarg.0
+    IL_0021:  ldfld      valuetype Game/GameState Game::gameState
+    IL_0026:  ldc.i4.2
+    IL_0027:  beq        IL_0038
+
+    IL_002c:  ldarg.0
+    IL_002d:  ldfld      valuetype Game/GameState Game::gameState
+    IL_0032:  ldc.i4.1
+    IL_0033:  bne.un     IL_004e
+
+    IL_0038:  ldarg.0
+    IL_0039:  ldfld      bool Game::_inCredits
+    IL_003e:  brtrue     IL_004e
+
+    IL_0043:  ldarg.0
+    IL_0044:  call       instance void Game::ShowMenu()
+    IL_0049:  br         IL_0076
+
+    IL_004e:  ldarg.0
+    IL_004f:  ldfld      valuetype Game/GameState Game::gameState
+    IL_0054:  ldc.i4.3
+    IL_0055:  bne.un     IL_0076
+
+    IL_005a:  ldarg.0
+    IL_005b:  ldfld      bool Game::_inCredits
+    IL_0060:  brtrue     IL_0070
+
+    IL_0065:  ldarg.0
+    IL_0066:  call       instance void Game::HideMenu()
+    IL_006b:  br         IL_0076
+
+    IL_0070:  ldarg.0
+    IL_0071:  call       instance void Game::HideCredits()
+    IL_0076:  ldarg.0
+    IL_0077:  ldfld      class [Rewired_Core]Rewired.Player Game::_rewired
+    IL_007c:  ldstr      "Pay"
+    IL_0081:  callvirt   instance bool [Rewired_Core]Rewired.Player::GetButtonDown(string)
+    IL_0086:  brfalse    IL_009d
+
+    IL_008b:  ldarg.0
+    IL_008c:  ldfld      valuetype Game/GameState Game::gameState
+    IL_0091:  ldc.i4.4
+    IL_0092:  bne.un     IL_009d
+
+    IL_0097:  ldarg.0
+    IL_0098:  call       instance void Game::Restart()
+    IL_009d:  ret
+  } // end of method Game::Update

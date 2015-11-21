@@ -1,0 +1,16 @@
+REQUIRES Visual Studio 2015!
+
+1. Copy Assembly-CSharp.dll from Kingdom_Data/Managed/ to the directory that contains:
+-ptch.exe
+-importsnew
+-importsorg
+-updatenew
+-updateorg
+-Setup.bat
+-Setup2.bat
+-Howto.txt
+
+2. Run Setup.bat
+3. Copy Assembly-CSharp.dllPATCHED to Kingdom_Data/Managed/
+4. Rename Assembly-CSharp.dllPATCHED to Assembly-CSharp.dll, and overwrite. [Make sure you backup the original!]
+5. Run the game to test. 
