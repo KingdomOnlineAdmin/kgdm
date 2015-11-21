@@ -28,10 +28,10 @@ namespace kgdm
         static string Gamestate;
         public static void Show()
         {
-            AttachConsole(-1);
-            AllocConsole();
+            //AttachConsole(-1);
+            //AllocConsole();
             //this is not working, console is displayed but text is not written to the console. 
-            
+            File.WriteAllText("ConsoleOutput.txt", "Started Kingdom...");
         }
         
         static List<object> datalist = new List<object>();
@@ -51,15 +51,10 @@ namespace kgdm
         static string lgs = "";
         public static void Update()
         {
-            
-
-
             if(Convert.ToString(recieved) == "Game"||Convert.ToString(recieved) == "Paused")
             {
                 Gamestate = Convert.ToString(recieved);
                 File.WriteAllText("Gamestate.txt", Gamestate);
- 
-
             }
         }
         public static int GetProcessIdByName(string name)
