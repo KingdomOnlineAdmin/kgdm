@@ -1,7 +1,0 @@
-C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\IO\obj\Release\IO.csprojResolveAssemblyReference.cache
-C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\IO\bin\Release\IO.exe
-C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\IO\bin\Release\IO.pdb
-C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\IO\bin\Release\kgdm.dll
-C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\IO\bin\Release\kgdm.pdb
-C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\IO\obj\Release\IO.exe
-C:\Users\Ben\documents\visual studio 2015\Projects\kgdm\IO\obj\Release\IO.pdb
