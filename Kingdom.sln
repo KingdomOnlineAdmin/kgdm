@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kgdm", "kgdm\kgdm.csproj", "{4810A811-1EC4-43FB-B71E-5C1B921CC647}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patcher", "Patcher\Patcher.csproj", "{3D474DF3-0F9D-42AC-81C6-4132528A948A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4810A811-1EC4-43FB-B71E-5C1B921CC647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4810A811-1EC4-43FB-B71E-5C1B921CC647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4810A811-1EC4-43FB-B71E-5C1B921CC647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D474DF3-0F9D-42AC-81C6-4132528A948A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D474DF3-0F9D-42AC-81C6-4132528A948A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D474DF3-0F9D-42AC-81C6-4132528A948A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D474DF3-0F9D-42AC-81C6-4132528A948A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

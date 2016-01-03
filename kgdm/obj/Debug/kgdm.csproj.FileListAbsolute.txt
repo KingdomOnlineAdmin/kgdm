@@ -7,3 +7,6 @@ C:\KingdomHack\KingdomInstallation\Kingdom_Data\Managed\kgdm.dll
 C:\KingdomHack\KingdomInstallation\Kingdom_Data\Managed\kgdm.pdb
 C:\KingdomHack\KingdomInstallation\kgdm\kgdm.dll
 C:\KingdomHack\KingdomInstallation\kgdm\kgdm.pdb
+C:\Users\Ben\Source\Repos\kgdm2\kgdm\obj\Debug\kgdm.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Source\Repos\kgdm2\kgdm\obj\Debug\kgdm.dll
+C:\Users\Ben\Source\Repos\kgdm2\kgdm\obj\Debug\kgdm.pdb

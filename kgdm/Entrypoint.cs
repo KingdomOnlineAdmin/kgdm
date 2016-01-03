@@ -15,7 +15,7 @@ namespace kgdm
 
     public class Entrypoint
     {
-        //PInvoke stuff
+        //PInvoke stuff, this is 
         [DllImport("kernel32.dll")]
         static extern int AllocConsole();
 
@@ -28,10 +28,13 @@ namespace kgdm
         static string Gamestate;
         public static void Show()
         {
-            //AttachConsole(-1);
-            //AllocConsole();
+            AttachConsole(-1);
+            AllocConsole();
+            Console.WriteLine("Loaded kgdm Console v0.4");
             //this is not working, console is displayed but text is not written to the console. 
-            File.WriteAllText("ConsoleOutput.txt", "Started Kingdom...");
+
+
+            
         }
         
         static List<object> datalist = new List<object>();
@@ -55,6 +58,8 @@ namespace kgdm
             {
                 Gamestate = Convert.ToString(recieved);
                 File.WriteAllText("Gamestate.txt", Gamestate);
+ 
+
             }
         }
         public static int GetProcessIdByName(string name)

@@ -1,0 +1,7 @@
+c:\users\ben\documents\visual studio 2015\Projects\Patcher\Patcher\bin\Debug\Patcher.exe.config
+c:\ILHACKING\Patcher.exe.config
+c:\ILHACKING\Patcher.exe
+c:\ILHACKING\Patcher.pdb
+c:\users\ben\documents\visual studio 2015\Projects\Patcher\Patcher\obj\Debug\Patcher.exe
+c:\users\ben\documents\visual studio 2015\Projects\Patcher\Patcher\obj\Debug\Patcher.pdb
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\Patcher\Patcher\obj\Debug\Patcher.csprojResolveAssemblyReference.cache
